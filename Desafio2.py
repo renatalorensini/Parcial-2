@@ -4,7 +4,7 @@ def eh_par(numero):
 
 def main():
     print("=== Verificador de Números Pares e Ímpares ===")
-    numeros = input("Digite números separados por espaço: ").split()
+    numeros = input("Digite os números separados por espaço: ").split()
     
     for num_str in numeros:
         # Tenta converter para inteiro, se não der, avisa o usuário
