@@ -16,20 +16,20 @@ def divisao(a, b):
         return "Erro: divisão por zero!"
 
 def main():
-    print("=== Calculadora Simples ===")
-    print("Operações disponíveis:")
+    print("=== Calculadora Simples: ===")
+    print(" Possíveis operações:")
     print("1 - Soma (+)")
     print("2 - Subtração (-)")
     print("3 - Multiplicação (*)")
     print("4 - Divisão (/)")
 
-    escolha = input("Escolha a operação (1/2/3/4): ")
+    escolha = input("Escolha a operação desejada (1/2/3/4): ")
 
     try:
         num1 = float(input("Digite o primeiro número: "))
         num2 = float(input("Digite o segundo número: "))
     except ValueError:
-        print("Erro: digite apenas números!")
+        print("Erro: Digite apenas números!")
         return
 
     if escolha == "1":
@@ -44,7 +44,7 @@ def main():
         print("Operação inválida!")
         return
 
-    print(f"O resultado é: {resultado}")
+    print(f"O resultado final da operação será: {resultado}")
 
 if __name__ == "__main__":
     main()
